@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-// import { data_images } from '../Components/Data/Index';
+import { data_images } from '../Components/Data/Index';
 
 
 export default function Home() {
@@ -17,7 +17,9 @@ export default function Home() {
         };
   return (
     <Wrapper>
-    {/* {
+   
+        <Slider {...settings}>
+           {
         data_images.map((item,index)=>{
           
             return(
@@ -28,42 +30,24 @@ export default function Home() {
         })
         
         
-        } */}
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+        }
+         
         </Slider>
 
     </Wrapper>
   )
 }
 const Wrapper = styled.div`
-  background-color: grey;
+  /* background-color: grey; */
   width: 100%;
   height: 100vh;
 
 
 `;
-// const Img = styled.img`
+const Img = styled.img`
   
-//   width: 300px;
-//   height: 300px;
-//   object-fit: contain;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 
-// `;
+`;
