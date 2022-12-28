@@ -8,26 +8,33 @@ export const data_images=[
     {
         id:1,
         image:A,
+        name:'ramu',
     },
     {
         id:2,
         image:B,
+        name:'rohit',
+
     },
     {
         id:3,
         image:C,
+        name:'Rahul',
     },
     {
         id:4,
         image:D,
+        name:'ra',
     },
     {
         id:5,
         image:E,
+        name:'ru',
     },
     {
         id:6,
         image:F,
+        name:'mu',
     },
 
 
